@@ -4,12 +4,29 @@
         display: flex
         align-items: center
         justify-content: space-between
-        padding-top: 40px
-        padding-bottom: 40px
+        padding: 40px 0
     &__search
         margin-right: auto
         margin-left: 108px
-
+    &-bottom
+        background-color: $dark-blue
+    &-menu
+        // max-width: 1110px
+        // margin: auto
+        list-style: none
+        display: flex
+        justify-content: space-between
+        padding: 31px 0
+        &__link
+            color: $light
+            text-transform: uppercase
+            font-family: 'Muli SemiBold 600', sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 18px
+.logo
+    width: 177px
 .search
     display: flex
     position: relative
@@ -48,3 +65,4 @@
         margin-left: 18px
         font-size: 14px
         line-height: 18px
+        color: $dark-gray
