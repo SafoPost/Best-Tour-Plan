@@ -342,7 +342,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Muli Light 300';
+  font-family: 'Muli';
   src: url("../fonts/muli/Mulilight.woff2") format("woff2"), url("../fonts/muli/Mulilight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -350,7 +350,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Muli Regular 400';
+  font-family: 'Muli';
   src: url("../fonts/muli/Muliregular.woff2") format("woff2"), url("../fonts/muli/Muliregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -358,7 +358,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Muli SemiBold 600';
+  font-family: 'Muli';
   src: url("../fonts/muli/Mulisemibold.woff2") format("woff2"), url("../fonts/muli/Mulisemibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -366,7 +366,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Muli Bold 700';
+  font-family: 'Muli';
   src: url("../fonts/muli/Mulibold.woff2") format("woff2"), url("../fonts/muli/Mulilight.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -374,7 +374,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Muli ExtraBold 800';
+  font-family: 'Muli';
   src: url("../fonts/muli/Muliextrabold.woff2") format("woff2"), url("../fonts/muli/Muliextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
@@ -453,9 +453,9 @@ img {
 .navbar-menu__link {
   color: #FFFFFF;
   text-transform: uppercase;
-  font-family: 'Muli SemiBold 600', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
 }
@@ -519,6 +519,33 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__link {
+  color: inherit;
+}
+
+.breadcrumb-list__link::after {
+  content: '/';
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 @media screen and (max-width: 1200px) {
