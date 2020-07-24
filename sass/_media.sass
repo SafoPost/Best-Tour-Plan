@@ -22,12 +22,28 @@
 @media screen and ( max-width:  767px)
   .container
     max-width: 560px
+    width: 85%
   .navbar
-    &__search
+    &__search, &__user, &-menu
       display: none
-    &-menu
-      display: none
+    &-top
+      &__menu-button
+        display: flex
+  .menu
+    &-button
+      background-color: transparent
+      border: none
+      padding: 0
+      min-width: 16px
+      height: 11px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $dark-gray
+@media screen and ( max-width:  576px)
   .logo
     width: 99px
-  .user
-    display: none
