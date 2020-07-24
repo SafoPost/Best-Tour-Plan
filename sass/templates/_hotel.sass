@@ -5,6 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+    margin-bottom: 20px
     &__stars
       margin-bottom: 4px
     &__offer
@@ -50,7 +51,50 @@
     font-size: 14px
     line-height: 18px
     font-weight: 600
-    &--top
+    &--max
       font-size: 11px
       line-height: 13px
+.hotel-grid
+  display: flex
+  justify-content: space-between
+  &__swiper-container 
+    width: 728px
+    height: 450px
+    margin: 0
+    position: relative
+    border-radius: 8px
+  &__swiper-slide
+    // max-width: 100%
+    // object-fit: cover
+    &:after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+  &__swiper-button
+    position: absolute
+    z-index: 10
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    border: none
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    outline: none
+    &--prev
+      left: 16px
+      background-image: url('../img/arrow-prev.svg')
+    &--next
+      right: 16px
+      background-image: url('../img/arrow-next.svg')
+  &__image
+    // object-fit: cover
+
+
 

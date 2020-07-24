@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -108,14 +109,48 @@
         <!-- /.hotel-info__primary -->
         <div class="raiting hotel-info__raiting">
           <span class="raiting__text">User Rattings</span>
-          <span class="raiting__counter">4.5/<span class="raiting__counter--top">5</span></span>
+          <span class="raiting__counter">4.5/<span class="raiting__counter raiting__counter--max">5</span></span>
         </div>
         <!-- /.hotel-info__secondary -->
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <!-- Slider main container -->
+        <div class="swiper-container hotel-grid__swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-grid__swiper-slide">
+              <img src="img/hotel-slide-01.jpg" alt="Hotel: Photo" class="hotel-grid__image">
+            </div>
+            <div class="swiper-slide hotel-grid__swiper-slide">
+              <img src="img/hotel-slide-02.jpg" alt="Hotel: Photo" class="hotel-grid__image">
+            </div>
+            <div class="swiper-slide hotel-grid__swiper-slide">
+              <img src="img/hotel-slide-03.jpg" alt="Hotel: Photo" class="hotel-grid__image">
+            </div>
+            <div class="swiper-slide hotel-grid__swiper-slide">
+              <img src="img/hotel-slide-04.jpg" alt="Hotel: Photo" class="hotel-grid__image">
+            </div>
+            <div class="swiper-slide hotel-grid__swiper-slide">
+              <img src="img/hotel-slide-05.jpg" alt="Hotel: Photo" class="hotel-grid__image">
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="swiper-button hotel-grid__swiper-button hotel-grid__swiper-button--prev"></button>
+          <button class="swiper-button hotel-grid__swiper-button hotel-grid__swiper-button--next"></button>
+        </div>
+        <!-- /.swiper-container -->
+
+      </div>
+      <!-- /.hotel-grid -->
+
+
     </div>
     <!-- /.container -->
   </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
