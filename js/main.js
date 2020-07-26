@@ -29,3 +29,20 @@ function init() {
     iconColor: '#ec1f46'
   }));
 };
+
+var mySwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  speed: 800,
+  // effect: 'fade',
+
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
