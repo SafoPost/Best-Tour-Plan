@@ -9,7 +9,7 @@
       height: 100%
       // object-fit: cover
 @media screen and ( max-width:  992px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 700px
   .navbar
     &-top
@@ -26,7 +26,7 @@
   .logo
     width: 133px
   .hotel
-    margin-bottom: 60px
+    padding-bottom: 60px
   .hotel-grid
     height: 690px
     flex-direction: column
@@ -39,7 +39,7 @@
   .map
     width: 340px
 @media screen and ( max-width:  767px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 560px
     width: 85%
   .navbar
@@ -87,9 +87,24 @@
     width: 270px
   .map
     width: 270px
+  .newsletter
+    &-wrapper
+      max-width: 560px
+      flex-direction: column
+      align-items: start
+      // height: 160px
+    &-title
+      font-size: 20px
+      line-height: 25px
+
+      &__strong
+        font-size: 30px
+        line-height: 38px
+        margin-bottom: 37px
+
 @media screen and ( max-width:  675px)
   .hotel
-    margin-bottom: 40px
+    padding-bottom: 40px
   .hotel-grid
     height: auto
     &__swiper-container
@@ -119,6 +134,10 @@
   .booking
     width: 100%
   .map
+    width: 100%
+  .newsletter
+    padding: 76px 0 83px
+  .subscribe
     width: 100%
 @media screen and ( max-width:  376px)
   .hotel-grid
