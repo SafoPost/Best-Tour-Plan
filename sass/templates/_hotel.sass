@@ -94,7 +94,7 @@
       right: 16px
       background-image: url('../img/arrow-next.svg')
   &__image
-    // object-fit: cover
+    object-fit: cover
 .hotel-right
   display: flex
   flex-direction: column
@@ -111,7 +111,7 @@
   font-style: normal
   font-weight: normal
   &__info
-    width: 295px
+    // width: 100%
     display: flex
     justify-content: space-between
     align-items: start
@@ -139,6 +139,10 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 8px
+  &__description
+    margin-left: 9px
+    font-size: 12px 
+    line-height: 16px
   &__call-center
     display: flex
     justify-content: space-between
@@ -167,4 +171,5 @@
   width: 350px
   height: 213px
   border-radius: 8px
+  overflow: hidden
   // background-color: $dark-blue

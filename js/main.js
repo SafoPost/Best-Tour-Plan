@@ -15,7 +15,6 @@ var mySwiper = new Swiper('.hotel-grid__swiper-container', {
   },
 });
 
-
 ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {

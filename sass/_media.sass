@@ -1,6 +1,13 @@
 @media screen and ( max-width:  1200px)
   .container
     max-width: 960px
+  .hotel-grid
+    &__swiper-container
+      width: 580px
+    &__swiper-slide
+    &__image
+      height: 100%
+      // object-fit: cover
 @media screen and ( max-width:  992px)
   .container
     max-width: 700px
@@ -18,7 +25,19 @@
       width: 340px
   .logo
     width: 133px
-
+  .hotel
+    margin-bottom: 60px
+  .hotel-grid
+    height: 690px
+    flex-direction: column
+    &__swiper-container
+      width: 100%
+  .hotel-right
+    flex-direction: row
+  .booking
+    width: 340px
+  .map
+    width: 340px
 @media screen and ( max-width:  767px)
   .container
     max-width: 560px
@@ -60,6 +79,55 @@
       margin-top: 10px
   .stars
     flex-basis: auto
+  .hotel-grid
+    height: 610px
+    &__swiper-container
+      height: 380px
+  .booking
+    width: 270px
+  .map
+    width: 270px
+@media screen and ( max-width:  675px)
+  .hotel
+    margin-bottom: 40px
+  .hotel-grid
+    height: auto
+    &__swiper-container
+      height: 380px
+      margin-bottom: 20px
+  .hotel-right
+    flex-direction: column
+    align-items: center
+    // height: 445px
+  .booking
+    width: 70%
+  .map
+    margin-top: 20px
+    width: 70%
 @media screen and ( max-width:  576px)
   .logo
     width: 105px
+  .hotel-grid
+    &__swiper-container
+      height: 320px
+@media screen and ( max-width:  476px)
+  .hotel-info
+    max-width: 270px
+  .hotel-grid
+    &__swiper-container
+      height: 280px
+  .booking
+    width: 100%
+  .map
+    width: 100%
+@media screen and ( max-width:  376px)
+  .hotel-grid
+    &__swiper-container
+      height: 220px
+  .map
+    height: 173px
+    
+@media screen and ( max-width:  320px)
+  .hotel-grid
+    &__swiper-container
+      height: 180px
