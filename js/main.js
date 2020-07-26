@@ -13,4 +13,20 @@ var mySwiper = new Swiper('.hotel-grid__swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
-})
+});
+
+
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [41.388682, 2.131476],
+    zoom: 15
+  });
+
+  myMap.geoObjects.add(new ymaps.Placemark([41.388682, 2.131476], {
+    balloonContent: 'Grand Hilton Hotel'
+  }, {
+    preset: 'islands#dotIcon',
+    iconColor: '#ec1f46'
+  }));
+};
