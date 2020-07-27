@@ -46,3 +46,8 @@ var mySwiper = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+
+$('.parallax-window').parallax({
+  imageSrc: 'img/newsletter-bg.jpg',
+  speed: 0.5
+});
