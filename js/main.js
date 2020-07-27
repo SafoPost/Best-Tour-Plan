@@ -11,7 +11,7 @@ var mySwiper = new Swiper('.hotel-grid__swiper-container', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });
 
@@ -33,8 +33,7 @@ function init() {
 var mySwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
-  speed: 800,
-  // effect: 'fade',
+  speed: 600,
 
   navigation: {
     nextEl: '.reviews__button--next',
@@ -43,7 +42,7 @@ var mySwiper = new Swiper('.reviews-slider', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 });
 

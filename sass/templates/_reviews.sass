@@ -1,6 +1,6 @@
 .reviews
   padding: 40px 0 70px
-  &-title
+  &__title
     font-weight: bold
     font-size: 36px
     line-height: 45px
@@ -26,64 +26,65 @@
     &--next
       right: 16px
       background-image: url('../img/arrow-next-grey.svg')
-.reviews-slider
-  &__item
-    position: relative
-    max-width: 730px
-    // min-height: 280px
-    margin: 45px auto 0
-    padding: 0 60px 30px
-    display: flex
-    flex-direction: column
-    align-items: center
-    background-color: $light
-    border-radius: 8px
-    &:before
-      content: ''
-      position: absolute
-      width: 70px
-      height: 47px
-      top: 13px
-      left: 60px
-      background: url(../img/quote-left.svg) no-repeat center / cover
-    &:after
-      content: ''
-      position: absolute
-      width: 70px
-      height: 47px
-      top: 118px
-      right: 60px
-      background: url(../img/quote-right.svg) no-repeat center / cover
-  &__profile
-    display: flex
-    flex-direction: column
-    align-items: center
-  &__avatar
-    width: 90px
-    height: 90px
-    object-fit: cover
-    border-radius: 50%
-    margin-top: -45px
-  &__username
-    margin-top: 9px
-    margin-bottom: 10px
-    color: $primary
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-  &__date
-    font-weight: normal
-    font-size: 10px
-    line-height: 13px
-    margin-bottom: 4px
-  &__raiting
-    width: 48px
-    display: flex
-    justify-content: space-between
-  &__text
-    max-width: 537px
-    margin-top: 32px
-    font-weight: normal
-    font-size: 12px
-    line-height: 19px
-    text-align: justify
+.reviews
+  &-slider
+    &__item
+      position: relative
+      max-width: 730px
+      // min-height: 280px
+      margin: 45px auto 0
+      padding: 0 60px 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $light
+      border-radius: 8px
+      &:before
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        top: 13px
+        left: 60px
+        background: url(../img/quote-left.svg) no-repeat center / cover
+      &:after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 47px
+        top: 118px
+        right: 60px
+        background: url(../img/quote-right.svg) no-repeat center / cover
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__avatar
+      width: 90px
+      height: 90px
+      object-fit: cover
+      border-radius: 50%
+      margin-top: -45px
+    &__username
+      margin-top: 9px
+      margin-bottom: 10px
+      color: $primary
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+    &__date
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__raiting
+      width: 48px
+      display: flex
+      justify-content: space-between
+    &__text
+      max-width: 537px
+      margin-top: 32px
+      font-weight: normal
+      font-size: 12px
+      line-height: 19px
+      text-align: justify
