@@ -120,31 +120,36 @@
     border: none
     border-radius: 4px
   &__info
+    color: $light-grey
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
 .footer-bottom
-  display: flex
-  align-items: center
-  justify-content: center
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
   margin-top: 90px
   &__list
-    position: absolute
+    grid-column: 2 / 4
+    justify-self: center
+    align-self: center
+    min-width: 283px
     display: flex
-    justify-content: center
+    justify-content: space-between
     padding: 0
     margin: 0
     list-style: none
     font-weight: normal
     font-size: 12px
     line-height: 15px
-  &__item
-    padding: 0 6px
   &__link
     color: $light
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__image
-    position: relative
-    margin-right: 0
-    margin-left: auto
+    grid-column: 4 / 5
+    justify-self: end
+    align-self: center
 

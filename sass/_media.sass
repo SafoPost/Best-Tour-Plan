@@ -12,6 +12,35 @@
       flex-wrap: wrap
   .card
     max-width: 23%
+  .footer
+    &-wrapper
+      grid-template-columns: minmax(min-content, 2fr) repeat(2, 1.5fr) minmax(min-content, 2fr)
+      grid-template-rows: repeat(3, minmax(45px, max-content)) repeat(2, minmax(65px, max-content)) 
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+    &__social-network
+      grid-row: 1 / 2
+      grid-column: 2 / 4
+      margin-left: auto
+      margin-right: auto
+    &__categories
+      grid-row: 3 / 4
+      grid-column: 1 / 2
+    &__additional
+      grid-row: 3 / 4
+      grid-column: 2 / 4
+      margin-left: auto
+      margin-right: auto
+    &__legal
+      grid-row: 3 / 4
+      grid-column: 4 / 5
+    &__contact-details
+      grid-row: 5 / 6
+      grid-column: span 2
+    &__contact-form
+      grid-row: 5 / 6
+      grid-column: span 2
 @media screen and ( max-width:  992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -60,6 +89,24 @@
   .card
     width: 339px
     max-width: 49%
+
+  .footer
+    &-wrapper
+      grid-template-columns: minmax(min-content, 2fr) repeat(2, 1.5fr) minmax(202px, 2fr)
+      grid-template-rows: repeat(3, minmax(38px, max-content)) repeat(4, minmax(60px, max-content))
+    &__contact-details
+      grid-row: 5 / 6
+      grid-column: span 4
+    &__contact-form
+      max-width: 540px
+      grid-row: 7 / 8
+      grid-column: span 4
+    &__input
+      flex-basis: 100%
+  .footer-bottom
+    &__list
+      grid-column: 1 / 4
+      justify-self: start
 @media screen and ( max-width:  767px)
   .container, .newsletter-wrapper
     max-width: 560px
@@ -134,6 +181,36 @@
         padding: 0 30px 35px
   .card
     max-width: 48%
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(4, 1fr)
+      grid-template-rows: repeat(9, minmax(30px, max-content)) repeat(2, minmax(40px, max-content)) repeat(2, minmax(60px, max-content))
+    &__logo
+      grid-row: 1 / 2
+      grid-column: 1 / 5
+    &__social-network
+      grid-row: 3 / 4
+      grid-column: 1 / 5
+      // justify-self: start
+      margin: 0
+    &__legal
+      grid-row: 5 / 6
+      grid-column: 1 / 5
+      margin: 0
+      // justify-self: start
+    &__additional
+      grid-row: 7 / 8
+      grid-column: span 4
+      margin: 0
+    &__categories
+      grid-row: 9 / 10
+      grid-column: span 4
+    &__contact-details
+      grid-row: 11 / 12
+      grid-column: span 4
+    &__contact-form
+      grid-row: 13 / 14
+      grid-column: span 4
 @media screen and ( max-width:  675px)
   .hotel
     padding-bottom: 40px
@@ -159,6 +236,28 @@
       height: 320px
   .card
     min-width: 100%
+  .footer
+    padding: 69px 0 21px
+    &__social-network
+      min-height: 67px
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+    &__message
+      margin-bottom: 15px
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 2
+  .footer-bottom
+    margin-top: 30px
+    &__list
+      grid-column: 1 / 5
+      margin-bottom: 10px
+    &__image
+      grid-column: 1 / 5
+      justify-self: start
 @media screen and ( max-width:  476px)
   .hotel-info
     max-width: 270px
@@ -190,6 +289,10 @@
     &__title
       font-size: 18px
       line-height: 23px
+  .footer-bottom
+    &__list
+      min-width: 100%
+      // max-width: 100%
 @media screen and ( max-width:  320px)
   .hotel-grid
     &__swiper-container
