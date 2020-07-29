@@ -12,30 +12,34 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/logo-horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
 
         <button class="menu-button navbar-top__menu-button">
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
-          <span class="menu-button__line"></span>
+          <span class="menu-button__line menu-button__line--up"></span>
+          <span class="menu-button__line menu-button__line--hidden"></span>
+          <span class="menu-button__line menu-button__line--down"></span>
         </button>
+        <!-- <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__close menu-button__close--up"></span>
+          <span class="menu-button__close menu-button__close--down"></span>
+        </button> -->
       </div>
       <!-- /.navbar-top -->
     </div>
@@ -43,6 +47,20 @@
     <nav class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar-menu__user navbar-menu__user--mobile--visible">
+              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+              <span class="user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar-menu__search navbar-menu__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="Search Location" />
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search" />
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>

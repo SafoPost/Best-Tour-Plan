@@ -50,3 +50,26 @@ $('.parallax-window').parallax({
   imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.5
 });
+
+var menuBtn = document.querySelector('.menu-button');
+var navbarBottom = document.querySelector('.navbar-bottom');
+var menuBtnLineUp = document.querySelector('.menu-button__line--up');
+var menuBtnLineHidden = document.querySelector('.menu-button__line--hidden');
+var menuBtnLineDown = document.querySelector('.menu-button__line--down');
+
+menuBtn.addEventListener('click', function () {
+  console.log('1230');
+  navbarBottom.classList.toggle('navbar-bottom--visible');
+  if (navbarBottom.classList.contains('navbar-bottom--visible')) {
+    menuBtnLineUp.style = 'width: 8px; height: 8px; background-color: transparent; border-right: 1px solid #333333; border-bottom: 1px solid #333333; transform: rotate(45deg);';
+    menuBtnLineHidden.style = 'display: none'
+    menuBtnLineDown.style = 'width: 8px; height: 8px; background-color: transparent; border-left: 1px solid #333333; border-top: 1px solid #333333; transform: rotate(45deg);';
+    menuBtn.style = 'min-height: 18px; padding-left: 4px;';
+  } else {
+    menuBtnLineUp.style = 'none';
+    menuBtnLineHidden.style = 'none'
+    menuBtnLineDown.style = 'none';
+    menuBtn.style = 'none';
+
+  }
+});
